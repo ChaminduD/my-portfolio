@@ -1,0 +1,44 @@
+:root{
+    /* Colors */
+    --primary-color: hsl(178, 58%, 55%);
+    --primary-light: hsl(180, 32%, 92%);
+    --secondary-color: hsl(181, 64%, 37%);
+    --primary-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    --background-color: hsl(0, 0%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --white-gradient: linear-gradient(143deg, var(--background-color), var(--white));
+    --grey: hsl(0, 0%, 26%);
+    --black: hsl(180, 10%, 14%);
+    --black-gradient: linear-gradient(to right, var(--black), var(--grey));
+
+    /* Typography */
+    --ff: "Manrope", sans-serif;
+    --h1: bold 3rem/3.625rem var(--ff);      /* 48px/58px */
+    --h2: bold 2.5rem/3.125rem var(--ff);    /* 40px/50px */
+    --h3: 400 2.125rem/2.75rem var(--ff);    /* 34px/44px */
+    --h4: bold 1.75rem/2.375rem var(--ff);   /* 28px/38px */
+    --h5: bold 1.5rem/2rem var(--ff);        /* 24px/32px */
+    --h6: bold 1.25rem/1.6875rem var(--ff);  /* 20px/27px */
+    --p: 1rem/1.75rem var(--ff);             /* 16px/28px */
+    --small: 0.875rem/1.25rem var(--ff);     /* 14px/20px */
+
+    /* Spacing */
+    --space-xxs: 0.25rem;  /* 4px */
+    --space-xs: 0.5rem;    /* 8px */
+    --space-sm: 1rem;      /* 16px */
+    --space-md: 1.5rem;    /* 24px */
+    --space-lg: 2rem;      /* 32px */
+    --space-xl: 3rem;      /* 48px */
+    --space-xxl: 4rem;     /* 64px */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+body{
+    background-color: var(--background-color);
+}
