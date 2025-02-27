@@ -1,0 +1,9 @@
+.tag{
+    display: inline-block;
+    color: var(--black);
+    background-image: var(--white-gradient);
+    padding: var(--space-xs) var(--space-sm);
+    font: var(--small);
+    font-weight: bold;
+    border-radius: 24px;
+}

@@ -1,0 +1,35 @@
+.primary-btn{
+    color: var(--background-color);
+    background-color: var(--grey);
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center; /* Vertically center the icon and text */
+    justify-content: center;
+    white-space: nowrap; /* Prevents text wrapping */
+    height: 56px; 
+}
+
+/* Hover styles applied only if the device supports hover */
+@media (hover: hover){
+    .primary-btn:hover{
+        background-color: var(--secondary-color);
+    }
+}
+
+.primary-btn:active{
+    background-color: var(--primary-color);
+}
+
+.primary-btn .icon{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}

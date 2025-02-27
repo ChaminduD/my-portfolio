@@ -30,6 +30,8 @@
     --space-lg: 2rem;      /* 32px */
     --space-xl: 3rem;      /* 48px */
     --space-xxl: 4rem;     /* 64px */
+
+    --transition: 0.3s ease-in-out;
 }
 
 *{

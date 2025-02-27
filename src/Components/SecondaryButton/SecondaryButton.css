@@ -1,0 +1,25 @@
+.secondary-btn{
+    color: var(--grey);
+    background-color: transparent;
+    padding: calc(var(--space-sm) - 0.25rem) calc(var(--space-lg) - 0.25rem);
+    border: 4px solid var(--grey);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+    height: 56px; 
+}
+
+/* Hover styles applied only if the device supports hover */
+@media (hover: hover){
+    .secondary-btn:hover{
+        color: var(--background-color);
+        background-color: var(--grey);
+    }
+}
+
+.secondary-btn:active{
+    color: var(--background-color);
+    background-color: hsl(0, 0%, 40%);
+}
