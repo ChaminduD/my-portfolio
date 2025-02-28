@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './Tag.css';
 
 function Tag({ label }){
-    return (<span className="tag">{label}</span>);
+    return <span className="tag">{label}</span>;
 }
 
 Tag.propTypes = {

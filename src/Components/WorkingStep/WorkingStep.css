@@ -1,0 +1,44 @@
+.working-step-container{
+    color: var(--black);
+    position: relative;
+}
+
+.number-background{
+    position: absolute;
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.number-background .step-number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: var(--h3);
+    color: var(--white);
+    z-index: 2;
+}
+
+.step-content{
+    background-image: var(--white-gradient);
+    padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-xxl);
+    border-radius: 20px;
+    box-shadow: var(--process-card-shadow);
+    max-width: 800px;
+    margin-left: 36px;
+}
+
+.step-content h6{
+    font: var(--h6);
+    margin-bottom: var(--space-xs);
+}
+
+.step-content p{
+    font: var(--p);
+}
