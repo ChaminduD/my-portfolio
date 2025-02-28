@@ -32,6 +32,7 @@
     --space-xxl: 4rem;     /* 64px */
 
     --transition: 0.3s ease-in-out;
+    --services-card-shadow: 0 5px 20px hsla(181, 64%, 37%, 0.5);
 }
 
 *{

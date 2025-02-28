@@ -1,0 +1,20 @@
+.services-card{
+    display: inline-block;
+    background-image: var(--white-gradient);
+    padding: var(--space-xl);
+    max-width: 336px;
+    border-radius: 30px;
+    box-shadow: var(--services-card-shadow);
+}
+
+.services-card h6{
+    font: var(--h6);
+    color: var(--black);
+    margin-top: var(--space-md);
+}
+
+.services-card p{
+    font: var(--p);
+    color: var(--black);
+    margin-top: var(--space-sm);
+}

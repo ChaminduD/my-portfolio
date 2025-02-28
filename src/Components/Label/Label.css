@@ -1,0 +1,10 @@
+.label-container{
+    background-image: var(--black-gradient);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 100px;
+    font: var(--h6);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
