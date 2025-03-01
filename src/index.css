@@ -34,6 +34,7 @@
     --transition: 0.3s ease-in-out;
     --services-card-shadow: 0 5px 20px hsla(181, 64%, 37%, 0.5);
     --process-card-shadow: 0 4px 10px hsla(181, 64%, 37%, 0.5);
+    --project-card-shadow: 0 10px 20px hsla(0, 0%, 26%, 0.25);
 }
 
 *{

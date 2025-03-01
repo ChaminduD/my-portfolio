@@ -3,20 +3,25 @@ import './PrimaryButton.css';
 import { arrowIcon, allIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx'
 
-function PrimaryButton({ text, onClick, type, icon }){
+function PrimaryButton({ text, onClick, type, icon, link }){
     let svgCode;
     switch (icon) {
-      case 'arrow':
-        svgCode = arrowIcon;
-        break;
-      case 'all':
-        svgCode = allIcon;
-        break;
-      default:
-        svgCode = null;
+        case 'arrow':
+            svgCode = arrowIcon;
+            break;
+        case 'all':
+            svgCode = allIcon;
+            break;
+        default:
+            svgCode = null;
     }
 
-    return(
+    return link ? (
+        <a href={link} className="primary-btn">
+            {text}
+            {svgCode && <Icon svgCode={svgCode} />}
+        </a>
+    ) : (
         <button type={type} className="primary-btn" onClick={onClick}>
             {text}
             {svgCode && <Icon svgCode={svgCode} />}
@@ -26,9 +31,10 @@ function PrimaryButton({ text, onClick, type, icon }){
 
 PrimaryButton.propTypes = {
     text: PropTypes.string.isRequired, // The text to display inside the button
-    onClick: PropTypes.func.isRequired, // Click handler function
+    onClick: PropTypes.func, // Click handler function
     type: PropTypes.string, // Type of the button
     icon: PropTypes.string,
+    link: PropTypes.string, // Link URL for the anchor tag
 }
 
 //Set default props

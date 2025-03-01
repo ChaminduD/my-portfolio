@@ -12,7 +12,8 @@
     align-items: center; /* Vertically center the icon and text */
     justify-content: center;
     white-space: nowrap; /* Prevents text wrapping */
-    height: 56px; 
+    height: 56px;
+    text-decoration: none;
 }
 
 /* Hover styles applied only if the device supports hover */
