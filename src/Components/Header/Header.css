@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation menu */
+nav{
+    background-color: hsla(0, 0%, 96%, 0.75);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space-lg) + var(--space-xs));
+    margin-top: var(--space-sm);
+    padding: var(--space-xs) var(--space-xl) var(--space-xs) var(--space-md);
+    max-width: 763px;
+    border-radius: 50px;
+    border: 4px solid var(--grey);
+}
+
+/* Light and Dark mode switch icon */
+.mode-icon{
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 50%;
+}
+.mode-icon svg{
+    border-radius: 50%;
+}
+.mode-icon:hover{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Navigation links */
+.main-nav-links{
+    list-style-type: none;
+    font: var(--p);
+    font-weight: bold;
+    display: flex;
+    gap: var(--space-sm);
+}
+.main-nav-links li{
+    position: relative;
+    border-radius: 100px;
+}
+.main-nav-links li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 100px;
+    transition: var(--transition);
+}
+@media(hover: hover){
+    .main-nav-links li a:hover{
+        background-color: hsla(178, 58%, 55%, 0.2);
+    }
+}
+.main-nav-links li a:active::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    border-radius: 100px;
+}
+
+/* Sub-navigation menu */
+.projects-nav{
+    position: relative;
+    color: var(--black);
+}
+.projects-nav .icon{
+    margin-left: var(--space-xs);
+}
+
+/* Sub-navigation links */
+.projects-nav-links{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: var(--primary-light);
+    border-radius: 24px;
+    padding: var(--space-xxs) 0;
+    box-shadow: 0 10px 20px hsla(0, 0%, 26%, 0.1);
+}
+.projects-nav-links li{
+    width: 180px;
+}
+.projects-nav-links li a{
+    margin: var(--space-xxs) 0;
+}
+
+/* When mouse over the projects-nav container, open the projects-nav content */
+.projects-nav:hover .projects-nav-links{
+    display: block;
+}
+.projects-nav:hover a{
+    background-color: var(--primary-light);
+}
