@@ -1,0 +1,54 @@
+footer{
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    padding: calc(var(--space-lg) + var(--space-xs));
+    border-radius: 128px 128px 0 0;
+    color: var(--grey);
+}
+
+/* Email send link */
+.email-link a{
+    display: inline-flex;
+    gap: var(--space-sm);
+    align-items: center;
+    transition: var(--transition);
+}
+@media(hover: hover){
+    .email-link a:hover{
+        color: var(--secondary-color);
+    }
+}
+
+.email-link a p{
+    font: var(--h5);
+}
+
+.email-link .icon{
+    display: block;
+}
+
+.email-link a, .social-links a{
+    text-decoration: none; /* Remove underline from the email link */
+    color: inherit; /* Use text color */
+}
+
+/* Social networks links */
+.social-links{
+    display: flex;
+    gap: var(--space-md);
+}
+.social-links .icon{
+    display: block;
+}
+.social-links a, .social-links .icon, .social-links .icon svg{
+    border-radius: 50%;
+}
+
+/* Site copyright text */
+.copyright-text{
+    font: var(--p);
+    display: inline;
+}

@@ -29,9 +29,7 @@ nav{
 .mode-icon svg{
     border-radius: 50%;
 }
-.mode-icon:hover{
-    box-shadow: 0 0 10px var(--primary-color);
-}
+
 
 /* Navigation links */
 .main-nav-links{
@@ -55,6 +53,9 @@ nav{
     transition: var(--transition);
 }
 @media(hover: hover){
+    .mode-icon:hover{
+        box-shadow: 0 0 10px var(--primary-color);
+    }
     .main-nav-links li a:hover{
         background-color: hsla(178, 58%, 55%, 0.2);
     }
