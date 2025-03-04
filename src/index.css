@@ -6,7 +6,7 @@
     --primary-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     --background-color: hsl(0, 0%, 96%);
     --white: hsl(0, 0%, 100%);
-    --white-gradient: linear-gradient(143deg, var(--background-color), var(--white));
+    --white-gradient: linear-gradient(-37deg, var(--background-color), var(--white));
     --grey: hsl(0, 0%, 26%);
     --black: hsl(180, 10%, 14%);
     --black-gradient: linear-gradient(to right, var(--black), var(--grey));
