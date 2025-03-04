@@ -2,6 +2,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Keep top when scrolling */
+    z-index: 1000;
 }
 
 /* Navigation menu */
@@ -12,9 +16,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: calc(var(--space-lg) + var(--space-xs));
+    gap: var(--space-lg);
     margin-top: var(--space-sm);
-    padding: var(--space-xs) var(--space-xl) var(--space-xs) var(--space-md);
+    padding: var(--space-xxs) calc(var(--space-lg) + var(--space-xxs)) var(--space-xxs) calc(var(--space-md) - var(--space-xxs));
     max-width: 763px;
     border-radius: 50px;
     border: 4px solid var(--grey);
@@ -25,11 +29,13 @@ nav{
     cursor: pointer;
     transition: var(--transition);
     border-radius: 50%;
+    padding: var(--space-xs);
 }
 .mode-icon svg{
+    fill: var(--black);
     border-radius: 50%;
+    transition: var(--transition);
 }
-
 
 /* Navigation links */
 .main-nav-links{
@@ -54,10 +60,17 @@ nav{
 }
 @media(hover: hover){
     .mode-icon:hover{
-        box-shadow: 0 0 10px var(--primary-color);
+        background-color: hsla(178, 58%, 55%, 0.2);
     }
     .main-nav-links li a:hover{
         background-color: hsla(178, 58%, 55%, 0.2);
+    }
+    /* When mouse over the projects-nav container, open the projects-nav content */
+    .projects-nav:hover .projects-nav-links{
+        display: block;
+    }
+    .projects-nav:hover a{
+        background-color: var(--primary-light);
     }
 }
 .main-nav-links li a:active::before{
@@ -71,6 +84,9 @@ nav{
     border: 4px solid var(--primary-color);
     box-shadow: 0 0 10px var(--primary-color);
     border-radius: 100px;
+}
+.mode-icon svg:active{
+    fill: var(--secondary-color);
 }
 
 /* Sub-navigation menu */
@@ -100,12 +116,4 @@ nav{
 }
 .projects-nav-links li a{
     margin: var(--space-xxs) 0;
-}
-
-/* When mouse over the projects-nav container, open the projects-nav content */
-.projects-nav:hover .projects-nav-links{
-    display: block;
-}
-.projects-nav:hover a{
-    background-color: var(--primary-light);
 }

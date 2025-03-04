@@ -22,7 +22,7 @@ function Header(){
                     <li><a href="">Resume</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <Icon className="mode-icon" svgCode={modeIcon} width={32} height={32}/>
+                <Icon className="mode-icon" svgCode={modeIcon} width={48} height={48}/>
             </nav>
         </header>
     );

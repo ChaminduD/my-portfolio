@@ -1,0 +1,43 @@
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 128px 0 160px;
+}
+
+/* Image */
+.hero-container img{
+    border-radius: 50%;
+    border: 10px solid var(--grey);
+    box-shadow: 0 4px 20px var(--secondary-color);
+    margin-bottom: var(--space-md);
+}
+
+/* Name */
+.hero-container .name{
+    font: var(--h1);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Intro */
+.hero-container .intro-text{
+    display: block;
+    font: var(--h4);
+    color: var(--black);
+}
+
+.hero-container p{
+    font: var(--h3);
+    color: var(--black);
+    text-shadow: 0 4px 30px hsla(178, 58%, 55%, 0.8);
+    margin: var(--space-sm) 0 var(--space-lg);
+}
+
+/* CTA buttons */
+.button-container{
+    display: flex;
+    gap: var(--space-sm);
+}

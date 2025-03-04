@@ -12,22 +12,38 @@ footer{
 /* Email send link */
 .email-link a{
     display: inline-flex;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     align-items: center;
+    transition: var(--transition);
+}
+.email-link a p{
+    font: var(--h5);
+}
+.email-link .icon{
+    display: block;
+    fill: var(--grey);
     transition: var(--transition);
 }
 @media(hover: hover){
     .email-link a:hover{
         color: var(--secondary-color);
     }
+    .social-links .icon:hover{
+        fill: var(--secondary-color);
+    }
+    .email-link a:hover .icon{
+        fill: var(--secondary-color);
+    }
 }
 
-.email-link a p{
-    font: var(--h5);
+.email-link a:active{
+    color: var(--primary-color);
 }
-
-.email-link .icon{
-    display: block;
+.social-links .icon:active{
+    fill: var(--primary-color);
+}
+.email-link a:active .icon{
+    fill: var(--primary-color);
 }
 
 .email-link a, .social-links a{
@@ -42,6 +58,8 @@ footer{
 }
 .social-links .icon{
     display: block;
+    fill: var(--grey);
+    transition: var(--transition);
 }
 .social-links a, .social-links .icon, .social-links .icon svg{
     border-radius: 50%;
