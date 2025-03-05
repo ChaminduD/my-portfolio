@@ -3,7 +3,7 @@
     --primary-color: hsl(178, 58%, 55%);
     --primary-light: hsl(180, 32%, 92%);
     --secondary-color: hsl(181, 64%, 37%);
-    --primary-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    --primary-gradient: linear-gradient(12deg, var(--primary-color), var(--secondary-color));
     --background-color: hsl(0, 0%, 96%);
     --white: hsl(0, 0%, 100%);
     --white-gradient: linear-gradient(-37deg, var(--background-color), var(--white));

@@ -1,0 +1,22 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.about-container .about-title{
+    font: var(--h2);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-container .about-description{
+    font: var(--p);
+    color: var(--black);
+    max-width: 790px;
+    text-align: center;
+    margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-xxl);
+}

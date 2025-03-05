@@ -1,0 +1,59 @@
+.web-design-projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.web-design-projects-container h3{
+    font: var(--h3);
+    color: var(--black);
+}
+
+.web-design-projects-container .project-container{
+    margin: calc(var(--space-xl) - var(--space-xs)) 0;
+    position: relative;
+}
+
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+@media(hover: hover){
+    .prev-btn:not(:disabled):hover, .next-btn:not(:disabled):hover{
+        background-color: var(--white);
+    }
+}
+
+.project-container .prev-btn:active, .project-container .next-btn:active{
+    background-color: var(--primary-color);
+}
+
+.project-container .prev-btn{
+    left: -100px;
+}
+
+.project-container .next-btn{
+    right: -100px;
+}
+
+.next-btn .next-btn-icon{
+    transform: rotate(180deg);
+}
+
+.project-container .prev-btn:disabled, .project-container .next-btn:disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.3;
+}

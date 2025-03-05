@@ -1,0 +1,24 @@
+.all-projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    padding: 80px 0;
+    margin-bottom: 80px;
+    border-radius: 80px;
+}
+
+.all-projects-container .projects-title{
+    font: var(--h2);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.all-projects-container .projects-category-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: calc(var(--space-xl) - var(--space-xs));
+}

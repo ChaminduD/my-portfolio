@@ -73,7 +73,7 @@ nav{
         background-color: var(--primary-light);
     }
 }
-.main-nav-links li a:active::before{
+.main-nav-links li a:active::before, .active::before{
     content: '';
     position: absolute;
     left: 50%;
