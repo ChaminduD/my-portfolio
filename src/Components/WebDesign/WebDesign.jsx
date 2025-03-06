@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './WebDesign.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import project1 from '../../assets/images/sample.png';
@@ -64,7 +65,9 @@ function WebDesign(){
                 </button>
             </div>
 
-            <PrimaryButton text="View All Projects" icon="all" link=""/>
+            <Link to="/projects/webdesign">
+                <PrimaryButton text="View All Projects" icon="all"/>
+            </Link>
         </section>
     );
 }

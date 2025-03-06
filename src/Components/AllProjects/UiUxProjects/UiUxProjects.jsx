@@ -1,13 +1,10 @@
 import './UiUxProjects.css';
-import Header from '../../Header/Header.jsx';
-import Footer from '../../Footer/Footer.jsx';
 import ProjectDetails from '../../ProjectDetails/ProjectDetails';
 import sampleImage from '../../../assets/images/sample.png'
 
 function UiUxProjects(){
     return(
         <>
-            <Header/>
             <main className="all-uiux-container">
                 <h1>UI/UX Design Projects</h1>
                 <section className="all-uiux-projects">
@@ -43,7 +40,6 @@ function UiUxProjects(){
                     />
                 </section>
             </main>
-            <Footer/>
         </>
     );
 }

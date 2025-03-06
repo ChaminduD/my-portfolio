@@ -1,13 +1,10 @@
 import './FrontendProjects.css';
-import Header from '../../Header/Header.jsx';
-import Footer from '../../Footer/Footer.jsx';
 import ProjectDetails from '../../ProjectDetails/ProjectDetails';
 import sampleImage from '../../../assets/images/sample.png'
 
 function FrontendProjects(){
     return(
         <>
-            <Header/>
             <main className="all-frontend-container">
                 <h1>Frontend Projects</h1>
                 <section className="all-frontend-projects">
@@ -43,7 +40,6 @@ function FrontendProjects(){
                     />
                 </section>
             </main>
-            <Footer/>
         </>
     );
 }

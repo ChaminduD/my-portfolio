@@ -1,13 +1,10 @@
 import './WebDesignProjects.css';
-import Header from '../../Header/Header.jsx';
-import Footer from '../../Footer/Footer.jsx';
 import ProjectDetails from '../../ProjectDetails/ProjectDetails';
 import sampleImage from '../../../assets/images/sample.png'
 
 function WebDesignProjects(){
     return(
         <>
-            <Header/>
             <main className="all-web-design-container">
                 <h1>Web Design Projects</h1>
                 <section className="all-web-design-projects">
@@ -43,7 +40,6 @@ function WebDesignProjects(){
                     />
                 </section>
             </main>
-            <Footer/>
         </>
     );
 }

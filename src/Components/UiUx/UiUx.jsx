@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './UiUx.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import project1 from '../../assets/images/sample.png';
@@ -64,7 +65,9 @@ function UiUx(){
                 </button>
             </div>
 
-            <PrimaryButton text="View All Projects" icon="all" link=""/>
+            <Link to="/projects/uiux">
+                <PrimaryButton text="View All Projects" icon="all"/>
+            </Link>
         </section>
     );
 }
