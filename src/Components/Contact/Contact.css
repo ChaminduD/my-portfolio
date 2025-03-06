@@ -1,0 +1,61 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.contact-container .contact-title{
+    font: var(--h2);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-container .personal-email{
+    font: var(--h3);
+    color: var(--black);
+    text-shadow: 0 10px 20px var(--primary-color);
+    margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-md);
+}
+
+.contact-container .contact-description{
+    font: var(--p);
+    color: var(--black);
+    margin-bottom: calc(var(--space-xl) - var(--space-xs));
+}
+
+.contact-container .contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+.contact-form input{
+    grid-column: 1/2;
+    border-radius: 100px;
+}
+.contact-form textarea{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-radius: 30px;
+    resize: none;
+}
+.contact-form button{
+    grid-column: 1/3;
+    justify-self: center;
+    margin-top: var(--space-xs);
+}
+
+.contact-form input, .contact-form textarea{
+    font: var(--p);
+    color: var(--black);
+    background: var(--white-gradient);
+    padding: var(--space-sm) var(--space-lg);
+    width: 420px;
+    border: 1px solid var(--primary-color);
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: var(--grey);
+}

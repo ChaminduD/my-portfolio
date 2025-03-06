@@ -1,20 +1,14 @@
 import './App.css'
-import Header from './Components/Header/Header'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Projects from './Components/Projects/Projects'
-import Footer from './Components/Footer/Footer'
+import './Components/Home/Home'
+import Home from './Components/Home/Home'
+import UiUxProjects from './Components/AllProjects/UiUxProjects/UiUxProjects'
 
 function App() {
   
 
   return (
     <>
-      <Header/>
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Footer/>
+      <UiUxProjects/>
     </>
   )
 }

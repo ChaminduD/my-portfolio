@@ -1,0 +1,23 @@
+.all-uiux-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 144px 0 80px;
+}
+
+.all-uiux-container h1{
+    font: var(--h1);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.all-uiux-container .all-uiux-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    margin-top: 80px;
+}
