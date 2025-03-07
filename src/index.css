@@ -1,3 +1,19 @@
+/* Define the Regular Weight */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./assets/fonts/Manrope-Regular.woff2') format('truetype');
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+}
+
+/* Define the Bold Weight */
+@font-face {
+    font-family: 'Manrope';
+    src: url('./assets/fonts/Manrope-Bold.woff2') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+}
+
 :root{
     /* Colors */
     --primary-color: hsl(178, 58%, 55%);

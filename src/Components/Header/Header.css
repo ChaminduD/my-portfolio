@@ -85,6 +85,10 @@ nav{
     box-shadow: 0 0 10px var(--primary-color);
     border-radius: 100px;
 }
+.main-nav-links li a.active {
+    background-color: var(--white); /* Highlight background */
+    transition: background-color 0.5s ease-in-out; /* Smooth effect */
+}
 .mode-icon svg:active{
     fill: var(--secondary-color);
 }

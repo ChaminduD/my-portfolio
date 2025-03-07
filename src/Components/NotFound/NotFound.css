@@ -1,0 +1,19 @@
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.not-found-container h1{
+    font: var(--h1);
+    color: var(--grey);
+    text-shadow: 0 4px 30px hsla(178, 58%, 55%, 0.8);;
+}
+
+.not-found-container p{
+    font: var(--p);
+    color: var(--black);
+    margin: var(--space-md) 0 var(--space-lg);
+}

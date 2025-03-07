@@ -13,8 +13,8 @@ function Hero(){
             </h1>
             <p>A passionate Frontend Developer and Web Designer</p>
             <div className="button-container">
-                <PrimaryButton text="About Me" icon="arrow" link="#about"/>
-                <SecondaryButton text="Contact Me" link=""/>
+                <PrimaryButton text="About Me" icon="arrow" link="/#about"/>
+                <SecondaryButton text="Contact Me" link="/#contact"/>
             </div>
         </section>
     );

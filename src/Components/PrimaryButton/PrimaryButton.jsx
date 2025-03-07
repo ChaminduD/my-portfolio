@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import './PrimaryButton.css';
 import { arrowIcon, allIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx'
+import { HashLink } from 'react-router-hash-link';
 
 function PrimaryButton({ text, onClick, type, icon, link }){
     let svgCode;
@@ -16,6 +17,17 @@ function PrimaryButton({ text, onClick, type, icon, link }){
             svgCode = null;
     }
 
+    if(link?.startsWith("#") || link?.includes("/#")){
+        // Render HashLink if the link is a hash link
+        return(
+            <HashLink smooth to={link} className="primary-btn">
+                {text}
+                {svgCode && <Icon svgCode={svgCode} />}
+            </HashLink>
+        );
+    }
+
+    // Default to rendering a regular anchor or button
     return link ? (
         <a href={link} className="primary-btn">
             {text}
