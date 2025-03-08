@@ -8,12 +8,14 @@ import WebDesignProjects from './Components/AllProjects/WebDesignProjects/WebDes
 import UiUxProjects from './Components/AllProjects/UiUxProjects/UiUxProjects.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import NotFound from './Components/NotFound/NotFound.jsx';
+import ScrollToHash from './Components/ScrollToHash.jsx';
 
 function App() {
   return (
     <>
       <Router>
         <ScrollToTop/>
+        <ScrollToHash/>
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
