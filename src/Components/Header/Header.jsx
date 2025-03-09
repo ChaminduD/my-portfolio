@@ -11,6 +11,31 @@ function Header(){
     const location = useLocation();
     const scrollTimeout = useRef(null);
     const scrollPositionRef = useRef(0);
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    // Initialize theme from localStorage
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme === "dark") {
+            document.body.classList.add("dark-mode");
+            setIsDarkMode(true);
+        }
+    }, []);
+
+    // Toggle theme and update localStorage
+    function toggleTheme(){
+        setIsDarkMode((prevMode) => {
+            const newMode = !prevMode;
+            if(newMode){
+                document.body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark");
+            }else{
+                document.body.classList.remove("dark-mode");
+                localStorage.setItem("theme", "light")
+            }
+            return newMode;
+        });
+    }
 
     // Handel route changes
     useEffect(() => {
@@ -30,40 +55,46 @@ function Header(){
     useEffect(() => {
         const handleScroll = () => {
             if (!isManualScroll || location.pathname !== "/") return;
-
+    
             const currentPosition = window.scrollY;
+    
             // Ignore small scroll diffs during animation
             if (Math.abs(currentPosition - scrollPositionRef.current) < 50) return;
-
+    
             scrollPositionRef.current = currentPosition;
             const sections = document.querySelectorAll(".section");
             let current = "";
             const scrollPosition = currentPosition + window.innerHeight * 0.4;
-
+    
             sections.forEach((section) => {
                 const { offsetTop, offsetHeight, id } = section;
                 const sectionStart = offsetTop - window.innerHeight * 0.2;
                 const sectionEnd = offsetTop + offsetHeight - window.innerHeight * 0.2;
-
+    
                 if (scrollPosition >= sectionStart && scrollPosition <= sectionEnd) {
                     current = id;
                 }
             });
-
-            setActiveSection(prev => current && current !== prev ? current : prev);
+    
+            if (current && current !== activeSection) {
+                setActiveSection(current);
+    
+                // Update the URL to include the hash for the active section
+                window.history.replaceState(null, null, `/#${current}`);
+            }
         };
-
+    
         const debouncedScroll = () => {
             clearTimeout(scrollTimeout.current);
             scrollTimeout.current = setTimeout(handleScroll, 150);
         };
-
+    
         window.addEventListener("scroll", debouncedScroll);
         return () => {
             window.removeEventListener("scroll", debouncedScroll);
             clearTimeout(scrollTimeout.current);
         };
-    }, [location.pathname, isManualScroll]);
+    }, [location.pathname, isManualScroll, activeSection]);    
 
     // Unified click handler
     const handleNavClick = (sectionId) => {
@@ -161,7 +192,7 @@ function Header(){
                         </HashLink>
                     </li>
                 </ul>
-                <Icon className="mode-icon" svgCode={modeIcon} width={48} height={48}/>
+                <Icon className="mode-icon" svgCode={modeIcon} width={48} height={48} onClick={toggleTheme}/>
             </nav>
         </header>
     );

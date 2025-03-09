@@ -51,6 +51,27 @@
     --services-card-shadow: 0 5px 20px hsla(181, 64%, 37%, 0.5);
     --process-card-shadow: 0 4px 10px hsla(181, 64%, 37%, 0.5);
     --project-card-shadow: 0 10px 20px hsla(0, 0%, 26%, 0.25);
+    --background-color-nav: hsla(0, 0%, 96%, 0.75);
+    --text-shadow1: 0 4px 30px hsla(178, 58%, 55%, 0.8);
+}
+
+.dark-mode{
+    --primary-color: hsl(178, 58%, 45%);
+    --primary-light: hsl(180, 32%, 8%);
+    --secondary-color: hsl(181, 64%, 63%);
+    --primary-gradient: linear-gradient(12deg, var(--primary-color), var(--secondary-color));
+    --background-color: hsl(0, 0%, 4%);
+    --white: hsl(0, 0%, 0%);
+    --white-gradient: linear-gradient(-37deg, var(--background-color), var(--white));
+    --grey: hsl(0, 0%, 74%);
+    --black: hsl(180, 10%, 86%);
+    --black-gradient: linear-gradient(to right, var(--black), var(--grey));
+
+    --services-card-shadow: 0 5px 20px hsla(181, 64%, 63%, 0.5);
+    --process-card-shadow: 0 4px 10px hsla(181, 64%, 63%, 0.5);
+    --project-card-shadow: 0 10px 20px hsla(0, 0%, 74%, 0.25);
+    --background-color-nav: hsla(0, 0%, 4%, 0.75);
+    --text-shadow1: 0 4px 30px hsla(178, 58%, 45%, 0.8);
 }
 
 *{
@@ -62,4 +83,5 @@
 
 body{
     background-color: var(--background-color);
+    transition: background-color 0.3s ease-in-out;
 }

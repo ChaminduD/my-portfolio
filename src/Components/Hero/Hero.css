@@ -32,7 +32,7 @@
 .hero-container p{
     font: var(--h3);
     color: var(--black);
-    text-shadow: 0 4px 30px hsla(178, 58%, 55%, 0.8);
+    text-shadow: var(--text-shadow1);
     margin: var(--space-sm) 0 var(--space-lg);
 }
 

@@ -10,7 +10,7 @@ header{
 
 /* Navigation menu */
 nav{
-    background-color: hsla(0, 0%, 96%, 0.75);
+    background-color: var(--background-color-nav);
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     display: flex;

@@ -22,6 +22,7 @@
 
 .project-details-container .project-details p{
     font: var(--p);
+    color: var(--black);
 }
 
 .project-details .description-title{
