@@ -42,3 +42,9 @@
 .step-content p{
     font: var(--p);
 }
+
+@media only screen and (max-width: 910px){
+    .step-content{
+        max-width: 600px;
+    }
+}

@@ -59,3 +59,17 @@
 .contact-form input::placeholder, .contact-form textarea::placeholder{
     color: var(--grey);
 }
+
+@media only screen and (max-width: 910px){
+    .contact-container .contact-form{
+        grid-template-columns: 1fr;
+    }
+    .contact-form textarea{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        height: 123px;
+    }
+    .contact-form button{
+        grid-column: 1/2;
+    }
+}

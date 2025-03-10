@@ -35,3 +35,9 @@
 .tools-container .tools-type:not(:last-child){
     margin-bottom: calc(var(--space-xl) + var(--space-xs));
 }
+
+@media only screen and (max-width: 910px){
+    .tools-container .tools-type .tool-label-container{
+        max-width: 600px;
+    }
+}

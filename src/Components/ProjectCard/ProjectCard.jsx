@@ -13,7 +13,7 @@ function ProjectCard({ title, label, description, image, primaryBtnLink, seconda
             </div>
             <div className="content-container" style={{ flexDirection: imageRight ? 'row-reverse' : 'row' }}>
                 <div className='image-container'>
-                    <img src={image} alt="Project" width={500} height={283} />
+                    <img src={image} alt="Project" />
                 </div>
                 <div className="details-container">
                     <p>{description}</p>
