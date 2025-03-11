@@ -2,7 +2,7 @@
     color: var(--background-color);
     background-color: var(--grey);
     padding: var(--space-sm) var(--space-lg);
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.25vw, 1rem);
     font-weight: bold;
     border: none;
     border-radius: 100px;

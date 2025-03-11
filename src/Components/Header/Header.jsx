@@ -145,7 +145,7 @@ function Header(){
                             onClick={() => handleNavClick("projects")}
                         >
                             Projects
-                            <Icon svgCode={dropdownArrowIcon}/>
+                            <Icon className="dropdown-icon" svgCode={dropdownArrowIcon}/>
                         </HashLink>
                         <ul className="projects-nav-links">
                             <li>

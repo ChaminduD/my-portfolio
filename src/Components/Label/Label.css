@@ -8,3 +8,13 @@
     align-items: center;
     gap: var(--space-sm);
 }
+
+@media only screen and (max-width: 910px){
+    .label-container .label-icon{
+        display: contents;
+    }
+    .label-container .label-icon svg{
+        width: 30px;
+        height: 30px;
+    }
+}

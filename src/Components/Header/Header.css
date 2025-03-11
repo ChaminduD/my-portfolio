@@ -98,7 +98,7 @@ nav{
     position: relative;
     color: var(--black);
 }
-.projects-nav .icon{
+.projects-nav .dropdown-icon{
     margin-left: var(--space-xs);
 }
 
@@ -120,4 +120,10 @@ nav{
 }
 .projects-nav-links li a{
     margin: var(--space-xxs) 0;
+}
+
+@media (hover: none) and (pointer: coarse){
+    .projects-nav .dropdown-icon{
+        display: none;
+    }
 }

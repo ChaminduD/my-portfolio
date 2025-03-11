@@ -20,3 +20,9 @@
     text-align: center;
     margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-xxl);
 }
+
+@media only screen and (max-width: 910px){
+    .about-container .about-description{
+        max-width: 600px;
+    }
+}

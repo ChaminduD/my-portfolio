@@ -51,7 +51,7 @@ function Label({ icon, label }){
 
     return(
         <div className="label-container">
-            <Icon svgCode={svgCode} width={40} height={40}/>
+            <Icon className="label-icon" svgCode={svgCode} width={40} height={40}/>
             <span className="label-text">{label}</span>
         </div>
     );
