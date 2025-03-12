@@ -19,3 +19,9 @@
     gap: var(--space-md);
     margin: calc(var(--space-xl) - var(--space-xs)) 0 80px;
 }
+
+@media only screen and (max-width: 640px){
+    .work-method-container{
+        width: 85%;
+    }
+}

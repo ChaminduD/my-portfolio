@@ -1,21 +1,38 @@
+/* Frontend Projects Section */
+.frontend-projects-container,
+.web-design-projects-container,
 .ui-ux-projects-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
 }
 
+.frontend-projects-container h3,
+.web-design-projects-container h3,
 .ui-ux-projects-container h3{
     font: var(--h3);
     color: var(--black);
 }
 
+.frontend-projects-container .project-container,
+.web-design-projects-container .project-container,
 .ui-ux-projects-container .project-container{
-    margin: calc(var(--space-xl) - var(--space-xs)) 0;
+    margin: calc(var(--space-xl) - var(--space-xs)) var(--space-xxl);
     position: relative;
 }
 
+/* Web Design Projects Section */
+.web-design-projects-container{
+    padding-top: 80px;
+}
+
+/* UI/UX Design Projects Section */
+.ui-ux-projects-container{
+    padding-top: 80px;
+}
+
+/* Projects sections previous and next buttons */
 .prev-btn, .next-btn{
     position: absolute;
     top: 50%;
@@ -41,11 +58,11 @@
 }
 
 .project-container .prev-btn{
-    left: -100px;
+    left: clamp(-100px, -15vw, -85px);
 }
 
 .project-container .next-btn{
-    right: -100px;
+    right: clamp(-100px, -15vw, -85px);
 }
 
 .next-btn .next-btn-icon{
@@ -56,4 +73,19 @@
     pointer-events: none;
     cursor: not-allowed;
     opacity: 0.3;
+}
+
+@media only screen and (max-width: 640px){
+    .prev-btn, .next-btn{
+        top: auto;
+        bottom: -100px;
+        width: 40px;
+        height: 40px;
+    }
+    .project-container .prev-btn{
+        left: var(--space-sm);
+    }
+    .project-container .next-btn{
+        right: var(--space-sm);
+    }
 }

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Frontend.css';
+import './ProjectsSubSections.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import project1 from '../../assets/images/sample.png';
 import { navArrowIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx';
 import PrimaryButton from '../PrimaryButton/PrimaryButton.jsx';
 
-function Frontend(){
+function UiUx(){
     const [count, setCount] = useState(0);
 
     function prevProject(){
@@ -19,8 +19,8 @@ function Frontend(){
     }
 
     return(
-        <section id="frontend-projects" className="frontend-projects-container section">
-            <h3>Frontend Development</h3>
+        <section id="ui-ux-projects" className="ui-ux-projects-container section">
+            <h3>UI/UX Design</h3>
             <div className="project-container">
                 {count === 0 &&
                     <ProjectCard
@@ -65,11 +65,11 @@ function Frontend(){
                 </button>
             </div>
 
-            <Link to="/projects/frontend">
+            <Link to="/projects/uiux">
                 <PrimaryButton text="View All Projects" icon="all"/>
             </Link>
         </section>
     );
 }
 
-export default Frontend;
+export default UiUx;

@@ -18,3 +18,16 @@
     color: var(--black);
     margin-top: var(--space-sm);
 }
+
+@media only screen and (max-width: 850px){
+    .services-card{
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 739px){
+    .services-card{
+        max-width: 400px;
+        text-align: center;
+    }
+}

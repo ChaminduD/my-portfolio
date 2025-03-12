@@ -1,7 +1,7 @@
 import './Projects.css';
-import Frontend from '../Frontend/Frontend.jsx';
-import WebDesign from '../WebDesign/WebDesign.jsx';
-import UiUx from '../UiUx/UiUx.jsx';
+import Frontend from '../ProjectsSubSections/Frontend.jsx';
+import WebDesign from '../ProjectsSubSections/WebDesign.jsx';
+import UiUx from '../ProjectsSubSections/UiUx.jsx';
 
 function Projects(){
     return(

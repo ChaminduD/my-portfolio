@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './WebDesign.css';
+import './ProjectsSubSections.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import project1 from '../../assets/images/sample.png';
 import { navArrowIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx';
 import PrimaryButton from '../PrimaryButton/PrimaryButton.jsx';
 
-function WebDesign(){
+function Frontend(){
     const [count, setCount] = useState(0);
 
     function prevProject(){
@@ -19,8 +19,8 @@ function WebDesign(){
     }
 
     return(
-        <section id="web-design-projects" className="web-design-projects-container section">
-            <h3>Web Design</h3>
+        <section id="frontend-projects" className="frontend-projects-container section">
+            <h3>Frontend Development</h3>
             <div className="project-container">
                 {count === 0 &&
                     <ProjectCard
@@ -30,7 +30,7 @@ function WebDesign(){
                         image={project1}
                         primaryBtnLink=""
                         secondaryBtnLink=""
-                        imageRight={true}
+                        imageRight={false}
                     />
                 }
                 {count === 1 &&
@@ -41,7 +41,7 @@ function WebDesign(){
                         image={project1}
                         primaryBtnLink=""
                         secondaryBtnLink=""
-                        imageRight={true}
+                        imageRight={false}
                     />
                 }
                 {count === 2 &&
@@ -52,7 +52,7 @@ function WebDesign(){
                         image={project1}
                         primaryBtnLink=""
                         secondaryBtnLink=""
-                        imageRight={true}
+                        imageRight={false}
                     />
                 }
 
@@ -65,11 +65,11 @@ function WebDesign(){
                 </button>
             </div>
 
-            <Link to="/projects/webdesign">
+            <Link to="/projects/frontend">
                 <PrimaryButton text="View All Projects" icon="all"/>
             </Link>
         </section>
     );
 }
 
-export default WebDesign;
+export default Frontend;

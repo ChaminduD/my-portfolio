@@ -4,7 +4,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 160px;
-    padding: calc(var(--space-lg) + var(--space-xs));
+    padding: calc(var(--space-lg) + var(--space-xs)) var(--space-xxl);
     border-radius: 128px 128px 0 0;
     color: var(--grey);
 }
@@ -73,12 +73,22 @@ footer{
 
 @media only screen and (max-width: 1080px){
     footer{
-        gap: 80px;
+        gap: 120px;
     }
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 930px){
     footer{
         border-radius: 80px 80px 0 0;
+        flex-wrap: wrap;
+        gap: 160px;
+        row-gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    footer{
+        gap: 80px;
+        row-gap: 40px;
     }
 }

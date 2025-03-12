@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 0;
+    text-align: center;
 }
 
 .contact-container .contact-title{
@@ -23,7 +24,7 @@
 .contact-container .contact-description{
     font: var(--p);
     color: var(--black);
-    margin-bottom: calc(var(--space-xl) - var(--space-xs));
+    margin: 0 var(--space-xxl) calc(var(--space-xl) - var(--space-xs)) var(--space-xxl);
 }
 
 .contact-container .contact-form{
@@ -60,7 +61,7 @@
     color: var(--grey);
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 930px){
     .contact-container .contact-form{
         grid-template-columns: 1fr;
     }
@@ -71,5 +72,20 @@
     }
     .contact-form button{
         grid-column: 1/2;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .contact-container .personal-email{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .contact-container .contact-form{
+        width: 80%;
+    }
+    .contact-form input, .contact-form textarea{
+        width: auto;
     }
 }

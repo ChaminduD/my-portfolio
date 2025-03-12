@@ -6,7 +6,7 @@ import SecondaryButton from '../SecondaryButton/SecondaryButton.jsx';
 function Hero(){
     return(
         <section id="home" className="hero-container section">
-            <img src={profilePic} alt="Profile Picture" width={280} height={280}/>
+            <img src={profilePic} alt="Profile Picture"/>
             <h1>
                 <span className="intro-text">Hi, I&apos;m</span>
                 <span className="name">Chamindu Dahanayaka</span>

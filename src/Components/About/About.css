@@ -21,8 +21,15 @@
     margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-xxl);
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 930px){
     .about-container .about-description{
         max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-container .about-description{
+        margin-left: var(--space-xl);
+        margin-right: var(--space-xxl);
     }
 }

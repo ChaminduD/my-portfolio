@@ -9,7 +9,7 @@
     gap: var(--space-sm);
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 930px){
     .label-container .label-icon{
         display: contents;
     }

@@ -36,8 +36,14 @@
     margin-bottom: calc(var(--space-xl) + var(--space-xs));
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (max-width: 930px){
     .tools-container .tools-type .tool-label-container{
         max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .tools-container .tools-type .tool-label-container{
+        max-width: 440px;
     }
 }
