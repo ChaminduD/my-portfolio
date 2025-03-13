@@ -72,6 +72,9 @@ nav{
     .projects-nav:hover a{
         background-color: var(--primary-light);
     }
+    .hamburger-icon:hover.hamburger-icon svg g{
+        fill: var(--primary-color);
+    }
 }
 .main-nav-links li a:active::before, .active::before{
     content: '';
@@ -122,6 +125,22 @@ nav{
     margin: var(--space-xxs) 0;
 }
 
+/* Hamburger menu icon */
+.hamburger-icon{
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    cursor: pointer;
+    display: none;
+    transition: var(--transition);
+}
+.hamburger-icon svg g{
+    fill: var(--black);
+}
+.hamburger-icon:active.hamburger-icon svg g{
+    fill: var(--primary-color);
+}
+
 @media (hover: none) and (pointer: coarse){
     .projects-nav .dropdown-icon{
         display: none;
@@ -147,14 +166,45 @@ nav{
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 510px){
+    .hamburger-icon{
+        display: block;
+    }
+    .hamburger-icon.rotate{
+        transform: rotate(90deg);
+    }
     nav{
-        position: relative;
-        padding: var(--space-xxs) calc(var(--space-md) - var(--space-xxs));
+        display: none;
+        flex-direction: column;
+        border-radius: 40px;
+        padding: var(--space-xs);
+        gap: 0;
+    }
+    @keyframes fade-in{
+        from{opacity: 0; transform: translateY(-90%);}
+        to{opacity: 1; transform: translateY(0%);}
+    }
+    nav.display-toggle{
+        display: flex;
+        animation: fade-in 0.5s ease-in-out;
+    }
+    .main-nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav-links li a{
+        padding: var(--space-xs) var(--space-md);
     }
     .mode-icon{
-        position: absolute;
-        right: calc(-1 * var(--space-sm));
-        top: var(--space-xxl);
+        position: initial;
+    }
+    .projects-nav-links{
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        box-shadow: none;
+    }
+    .projects-nav-links li a{
+        margin: 0;
     }
 }

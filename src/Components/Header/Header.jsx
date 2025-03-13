@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Header.css';
-import { modeIcon, dropdownArrowIcon } from '../Icon/Icons.jsx';
+import { modeIcon, dropdownArrowIcon, hamburgerMenuIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx';
 
 function Header(){
@@ -112,9 +112,21 @@ function Header(){
         "web-design-projects",
         "ui-ux-projects"
     ].includes(activeSection) || location.pathname.startsWith('/projects/');
+
+    function toggleMenu() {
+        const navMenu = document.getElementsByTagName("nav")[0]; // Access the first <nav> element
+        const navMenuIcon = document.querySelector(".hamburger-icon");
+
+        if(navMenu){ // Check if the element exists
+            navMenu.classList.toggle("display-toggle");
+            navMenuIcon.classList.toggle("rotate");
+        }
+    }
+    
     
     return(
         <header>
+            <Icon className="hamburger-icon" svgCode={hamburgerMenuIcon} onClick={toggleMenu}/>
             <nav>
                 <ul className="main-nav-links">
                     <li>

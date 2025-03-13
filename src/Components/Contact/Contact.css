@@ -89,3 +89,9 @@
         width: auto;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .contact-container .personal-email{
+        font-size: 1.25rem;
+    }
+}

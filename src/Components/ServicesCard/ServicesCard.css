@@ -31,3 +31,9 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .services-card{
+        max-width: 80%;
+    }
+}
