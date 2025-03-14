@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: var(--space-xxl2);
 }
 
 .about-container .about-title{
@@ -18,7 +18,7 @@
     color: var(--black);
     max-width: 790px;
     text-align: center;
-    margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-xxl);
+    margin: var(--space-lg2) 0 var(--space-xxl);
 }
 
 @media only screen and (max-width: 930px){

@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: var(--space-xxl3);
 }
 
 /* Main heading */
 .tools-container h3{
     font: var(--h3);
     color: var(--secondary-color);
-    margin-bottom: calc(var(--space-xl) - var(--space-xs));
+    margin-bottom: var(--space-lg2);
 }
 
 /* Subheading */
@@ -45,5 +45,17 @@
 @media only screen and (max-width: 650px){
     .tools-container .tools-type .tool-label-container{
         max-width: 440px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .tools-container .tools-type .tool-label-container{
+        gap: var(--space-sm);
+    }
+}
+
+@media only screen and (max-width: 464px){
+    .tools-container .tools-type .tool-label-container{
+        max-width: 300px;
     }
 }

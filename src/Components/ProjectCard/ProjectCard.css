@@ -68,7 +68,7 @@
     }
     .title-container .tag{
         position: absolute;
-        bottom: -40px;
+        bottom: calc(-1 * (var(--space-xl) - var(--space-xxs)));
         right: var(--space-xs);
     }
     .content-container .image-container img{
@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 739px){
     .project-card-container{
-        width: 400px;
+        width: 100%;
     }
     .content-container .image-container img{
         width: 100%;
@@ -99,12 +99,8 @@
     }
 }
 
-@media only screen and (max-width: 640px){
-    .project-card-container{
-        width: 100%;
-    }
-    .content-container .image-container img{
-        width: 100%;
-        height: auto;
+@media only screen and (max-width: 510px){
+    .title-container h4{
+        font-size: 1.25rem;
     }
 }

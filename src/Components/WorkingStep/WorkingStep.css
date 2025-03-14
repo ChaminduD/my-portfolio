@@ -31,7 +31,7 @@
     border-radius: 20px;
     box-shadow: var(--process-card-shadow);
     max-width: 800px;
-    margin-left: 36px;
+    margin-left: calc(var(--space-lg) + var(--space-xxs));
 }
 
 .step-content h6{
@@ -58,5 +58,23 @@
 @media only screen and (max-width: 640px){
     .step-content{
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .number-background{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .step-content{
+        padding: var(--space-xxl) var(--space-lg2) var(--space-lg2);
+        margin-left: 0;
+        margin-top: calc(var(--space-lg) + var(--space-xxs));
+    }
+
+    .step-content h6{
+        margin-bottom: var(--space-sm);
     }
 }

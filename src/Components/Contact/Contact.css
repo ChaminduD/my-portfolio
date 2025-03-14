@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 0;
+    padding: var(--space-xxl2) 0;
     text-align: center;
 }
 
@@ -18,13 +18,13 @@
     font: var(--h3);
     color: var(--black);
     text-shadow: 0 10px 20px var(--primary-color);
-    margin: calc(var(--space-xl) - var(--space-xs)) 0 var(--space-md);
+    margin: var(--space-lg2) 0 var(--space-md);
 }
 
 .contact-container .contact-description{
     font: var(--p);
     color: var(--black);
-    margin: 0 var(--space-xxl) calc(var(--space-xl) - var(--space-xs)) var(--space-xxl);
+    margin: 0 var(--space-xxl) var(--space-lg2) var(--space-xxl);
 }
 
 .contact-container .contact-form{
@@ -75,9 +75,17 @@
     }
 }
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 680px){
+    .contact-container .personal-email{
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+    }
+}
+
+@media only screen and (max-width: 547px){
     .contact-container .personal-email{
         font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -93,5 +101,14 @@
 @media only screen and (max-width: 500px){
     .contact-container .personal-email{
         font-size: 1.25rem;
+        line-height: 1.6875rem;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .contact-container .personal-email{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: bold;
     }
 }

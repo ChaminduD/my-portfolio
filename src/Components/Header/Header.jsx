@@ -80,7 +80,7 @@ function Header(){
                 setActiveSection(current);
     
                 // Update the URL to include the hash for the active section
-                window.history.replaceState(null, null, `/#${current}`);
+                window.history.replaceState(null, null, `/my-portfolio/#${current}`);
             }
         };
     

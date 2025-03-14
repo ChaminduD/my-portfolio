@@ -2,7 +2,7 @@
     color: var(--background-color);
     background-color: var(--grey);
     padding: var(--space-sm) var(--space-lg);
-    font-size: clamp(0.875rem, 1.25vw, 1rem);
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 100px;
@@ -28,7 +28,7 @@
 }
 
 .primary-btn .icon{
-    margin-left: 8px;
+    margin-left: var(--space-xs);
     display: flex;
     align-items: center;
     justify-content: center;

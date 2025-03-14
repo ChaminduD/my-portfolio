@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    text-align: center;
 }
 
 .not-found-container h1{

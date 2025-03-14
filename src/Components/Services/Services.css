@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: calc(var(--space-xl) - var(--space-xs));
-    margin: calc(var(--space-xl) - var(--space-xs)) calc(var(--space-xl) - var(--space-xs)) 120px;
+    gap: var(--space-lg2);
+    margin: var(--space-lg2) var(--space-lg2) var(--space-xxl3);
     max-width: 1139px;
 }

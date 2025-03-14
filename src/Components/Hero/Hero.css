@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: clamp(110px, 10vw, 128px) var(--space-lg) 80px;
+    padding: clamp(110px, 10vw, 128px) var(--space-lg) var(--space-xxl2);
 }
 
 /* Image */
@@ -39,7 +39,42 @@
 }
 
 /* CTA buttons */
-.button-container{
+.hero-container .button-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--space-sm);
+}
+
+@media only screen and (max-width: 610px){
+    .hero-container .name{
+        line-height: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .hero-container{
+        padding: var(--space-xxl) var(--space-lg) var(--space-xxl2);
+    }
+}
+
+@media only screen and (max-width: 529px){
+    .hero-container p{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 377px){
+    .hero-container p{
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .hero-container p{
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
 }

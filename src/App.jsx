@@ -13,7 +13,7 @@ import ScrollToHash from './Components/ScrollToHash.jsx';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/my-portfolio">
         <ScrollToTop/>
         <ScrollToHash/>
         <Header/>

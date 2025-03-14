@@ -53,9 +53,25 @@
 @media only screen and (max-width: 1189px){
     .project-details-container{
         flex-wrap: wrap;
-        max-width: 80%;
+        max-width: 70%;
+        gap: var(--space-lg);
     }
     .project-details-container .project-image-container{
         width: auto;
+    }
+    .project-details-container .project-details{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    .project-details-container{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .project-details-container{
+        gap: var(--space-md);
     }
 }

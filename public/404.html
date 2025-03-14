@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const redirect = () => {
+        const path = window.location.pathname;
+        const repo = "/my-portfolio";
+        window.location.href = `${repo}/index.html?redirect=${encodeURIComponent(path)}`;
+      };
+      redirect();
+    </script>
+  </head>
+  <body>
+    Redirecting to main page...
+  </body>
+</html>

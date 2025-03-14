@@ -15,21 +15,19 @@
     color: var(--black);
 }
 
-.frontend-projects-container .project-container,
-.web-design-projects-container .project-container,
-.ui-ux-projects-container .project-container{
-    margin: calc(var(--space-xl) - var(--space-xs)) var(--space-xxl);
+.project-container{
+    margin: var(--space-lg2) var(--space-xl);
     position: relative;
 }
 
 /* Web Design Projects Section */
 .web-design-projects-container{
-    padding-top: 80px;
+    padding-top: var(--space-xxl2);
 }
 
 /* UI/UX Design Projects Section */
 .ui-ux-projects-container{
-    padding-top: 80px;
+    padding-top: var(--space-xxl2);
 }
 
 /* Projects sections previous and next buttons */
@@ -75,17 +73,42 @@
     opacity: 0.3;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 739px){
     .prev-btn, .next-btn{
-        top: auto;
-        bottom: -100px;
-        width: 40px;
-        height: 40px;
+        top: 40%;
+        opacity: 0.5;
     }
     .project-container .prev-btn{
-        left: var(--space-sm);
+        left: var(--space-xs);
     }
     .project-container .next-btn{
-        right: var(--space-sm);
+        right: var(--space-xs);
+    }
+    .project-container .prev-btn:disabled, .project-container .next-btn:disabled{
+        opacity: 0.01;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .project-container{
+        margin: var(--space-lg2) var(--space-lg);
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .project-container{
+        margin: var(--space-lg2) var(--space-md);
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .prev-btn, .next-btn{
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 331px){
+    .prev-btn, .next-btn{
+        top: 25%;
     }
 }

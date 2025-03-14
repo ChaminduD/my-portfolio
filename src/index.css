@@ -29,23 +29,27 @@
 
     /* Typography */
     --ff: "Manrope", sans-serif;
-    --h1: bold clamp(2.5rem, 5vw, 3rem) / clamp(3.125rem, 1.2 * 5vw, 3.625rem) var(--ff);      /* 48px/58px */
-    --h2: bold clamp(2rem, 4vw, 2.5rem) / clamp(2.5rem, 1.2 * 4vw, 3.125rem) var(--ff);    /* 40px/50px */
-    --h3: 400 clamp(1.75rem, 3vw, 2.125rem) / clamp(2.25rem, 1.2 * 3vw, 2.75rem) var(--ff);    /* 34px/44px */
-    --h4: bold clamp(1.5rem, 2.5vw, 1.75rem) / clamp(2rem, 1.2 * 2.5vw, 2.375rem) var(--ff);   /* 28px/38px */
-    --h5: bold clamp(1.25rem, 2vw, 1.5rem) / clamp(1.75rem, 1.2 * 2vw, 2rem) var(--ff);        /* 24px/32px */
-    --h6: bold clamp(1rem, 1.5vw, 1.25rem) / clamp(1.5rem, 1.2 * 1.5vw, 1.6875rem) var(--ff);  /* 20px/27px */
-    --p: clamp(0.875rem, 1.25vw, 1rem) / clamp(1.5rem, 1.2 * 1.25vw, 1.75rem) var(--ff);             /* 16px/28px */
-    --small: clamp(0.75rem, 1vw, 0.875rem) / clamp(1rem, 1.2 * 1vw, 1.25rem) var(--ff);     /* 14px/20px */
+    --h1: bold 3rem / 3.625rem var(--ff);      /* 48px/58px */
+    --h2: bold 2.5rem / 3.125rem var(--ff);    /* 40px/50px */
+    --h3: 400 2.125rem / 2.75rem var(--ff);    /* 34px/44px */
+    --h4: bold 1.75rem / 2.375rem var(--ff);   /* 28px/38px */
+    --h5: bold 1.5rem / 2rem var(--ff);        /* 24px/32px */
+    --h6: bold 1.25rem / 1.6875rem var(--ff);  /* 20px/27px */
+    --p: 1rem / 1.75rem var(--ff);             /* 16px/28px */
+    --small: 0.875rem / 1.25rem var(--ff);     /* 14px/20px */
 
     /* Spacing */
-    --space-xxs: clamp(0.2rem, 1vw, 0.25rem);  /* 4px */
-    --space-xs: clamp(0.4rem, 2vw, 0.5rem);    /* 8px */
-    --space-sm: clamp(0.8rem, 3vw, 1rem);      /* 16px */
-    --space-md: clamp(1.2rem, 4vw, 1.5rem);    /* 24px */
-    --space-lg: clamp(1.6rem, 5vw, 2rem);      /* 32px */
-    --space-xl: clamp(2.4rem, 6vw, 3rem);      /* 48px */
-    --space-xxl: clamp(3.2rem, 7vw, 4rem);     /* 64px */
+    --space-xxs: 0.25rem;  /* 4px */
+    --space-xs: 0.5rem;    /* 8px */
+    --space-sm: 1rem;      /* 16px */
+    --space-md: 1.5rem;    /* 24px */
+    --space-lg: 2rem;      /* 32px */
+    --space-lg2: 2.5rem;   /* 40px */
+    --space-xl: 3rem;      /* 48px */
+    --space-xxl: 4rem;     /* 64px */
+    --space-xxl2: 5rem;    /* 80px */
+    --space-xxl3: 7.5rem;  /* 120px */
+    --space-xxl4: 10rem;   /* 160px */
 
     --transition: 0.3s ease-in-out;
     --services-card-shadow: 0 5px 20px hsla(181, 64%, 37%, 0.5);
@@ -84,4 +88,13 @@
 body{
     background-color: var(--background-color);
     transition: background-color 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 610px){
+    :root{
+        --h1: bold 2.5rem / 3.25rem var(--ff);
+        --h2: bold 2rem / 2.5rem var(--ff);
+        --h3: 400 1.75rem / 2.25rem var(--ff);
+        --h4: bold 1.5rem / 2rem var(--ff);
+    }
 }

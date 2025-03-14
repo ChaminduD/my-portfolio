@@ -3,7 +3,7 @@
     background-color: transparent;
     padding: calc(var(--space-sm) - 0.25rem) calc(var(--space-lg) - 0.25rem);
     border: 4px solid var(--grey);
-    font-size: clamp(0.875rem, 1.25vw, 1rem);
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 100px;
     cursor: pointer;

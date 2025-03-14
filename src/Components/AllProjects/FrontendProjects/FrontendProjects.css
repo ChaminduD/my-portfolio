@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 144px 0 80px;
+    padding: 9rem 0 var(--space-xxl2);
 }
 
 .all-frontend-container h1{
@@ -20,6 +20,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 160px;
-    margin-top: 80px;
+    gap: var(--space-xxl4);
+    margin-top: var(--space-xxl2);
+}
+
+@media only screen and (max-width: 1189px){
+    .all-frontend-container .all-frontend-projects{
+        gap: var(--space-xxl2);
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .all-frontend-container{
+        padding: var(--space-xxl2) 0;
+    }
 }
