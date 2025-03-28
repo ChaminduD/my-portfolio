@@ -13,6 +13,9 @@ function ProjectDetails({
     solution,
     description1,
     description2,
+    twoButtons = true,
+    primaryBtnText = "Visit",
+    secondaryBtnText = "Code",
     primaryBtnLink,
     secondaryBtnLink
 }){
@@ -36,8 +39,14 @@ function ProjectDetails({
                 </p>
 
                 <div className="btn-container">
-                    <PrimaryButton text="Visit" link={primaryBtnLink}/>
-                    <SecondaryButton text="Code" link={secondaryBtnLink}/>
+                    {twoButtons ?
+                        <>
+                            <PrimaryButton text={primaryBtnText} link={primaryBtnLink}/>
+                            <SecondaryButton text={secondaryBtnText} link={secondaryBtnLink}/>
+                        </>
+                        :
+                        <PrimaryButton text={primaryBtnText} link={primaryBtnLink}/>
+                    }
                 </div>
             </div>
         </section>
@@ -53,6 +62,9 @@ ProjectDetails.propTypes = {
     solution: PropTypes.bool.isRequired,
     description1: PropTypes.string.isRequired,
     description2: PropTypes.string,
+    twoButtons: PropTypes.bool,
+    primaryBtnText: PropTypes.string,
+    secondaryBtnText: PropTypes.string,
     primaryBtnLink: PropTypes.string.isRequired,
     secondaryBtnLink: PropTypes.string.isRequired,
 }
