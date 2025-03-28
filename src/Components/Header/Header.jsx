@@ -13,6 +13,23 @@ function Header(){
     const scrollPositionRef = useRef(0);
     const [isDarkMode, setIsDarkMode] = useState(false);
 
+    // Handle the scroll-based border
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);    
+
     // Initialize theme from localStorage
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
