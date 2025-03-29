@@ -73,6 +73,15 @@ nav.scrolled{
     /* When mouse over the projects-nav container, open the projects-nav content */
     .projects-nav:hover .projects-nav-links{
         display: block;
+        animation: HoverIn 500ms ease-in-out;
+    }
+    @keyframes HoverIn{
+        from{
+            transform: translate(50%, -3%);
+        }
+        to{
+            transform: translate(50%, 0%);
+        }
     }
     .projects-nav:hover a{
         background-color: var(--primary-light);

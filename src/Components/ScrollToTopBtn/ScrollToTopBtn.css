@@ -1,0 +1,79 @@
+.scroll-to-top-arrow{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: var(--space-xs);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--process-card-shadow);
+    transition: var(--transition);
+    animation: SlideIn 500ms ease-in-out;
+}
+@keyframes SlideIn{
+    from{
+        bottom: 20px;
+    }
+    to{
+        bottom: 50px;
+    }
+}
+.scroll-to-top-arrow-icon svg{
+    transform: rotate(90deg);
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+.scroll-to-top-arrow-icon svg path{
+    fill: var(--white);
+}
+
+@media(hover: hover){
+    .scroll-to-top-arrow:hover{
+        background-color: var(--secondary-color);
+        transform: translateY(calc(-1 * var(--space-xxs)));
+    }
+}
+
+.scroll-to-top-arrow:active{
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top-arrow {
+        bottom: 30px;
+        right: 30px;
+    }
+    .scroll-to-top-arrow-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    @keyframes SlideIn{
+        from{
+            bottom: 10px;
+        }
+        to{
+            bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-to-top-arrow {
+        bottom: 20px;
+        right: 20px;
+    }
+    .scroll-to-top-arrow-icon svg{
+        width: 20px;
+        height: 20px;
+    }
+    @keyframes SlideIn{
+        from{
+            bottom: 5px;
+        }
+        to{
+            bottom: 20px;
+        }
+    }
+}

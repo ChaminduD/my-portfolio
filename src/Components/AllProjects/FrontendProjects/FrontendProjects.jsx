@@ -1,6 +1,7 @@
 import './FrontendProjects.css';
 import ProjectDetails from '../../ProjectDetails/ProjectDetails';
-import sampleImage from '../../../assets/images/sample.png'
+import sampleImage from '../../../assets/images/sample.png';
+import ScrollToTopBtn from '../../ScrollToTopBtn/ScrollToTopBtn';
 
 function FrontendProjects(){
     return(
@@ -39,6 +40,7 @@ function FrontendProjects(){
                     description2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea."
                     />
                 </section>
+                <ScrollToTopBtn/>
             </main>
         </>
     );
