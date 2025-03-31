@@ -19,6 +19,10 @@
     height: 100%;
 }
 
+.project-details-container .project-details{
+    max-width: 495px;
+}
+
 .project-details-container .project-details h3{
     font: var(--h3);
     color: var(--black);
@@ -61,6 +65,7 @@
     }
     .project-details-container .project-details{
         width: fit-content;
+        max-width: fit-content;
     }
 }
 

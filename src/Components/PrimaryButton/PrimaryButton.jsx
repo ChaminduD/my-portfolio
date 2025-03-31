@@ -29,7 +29,7 @@ function PrimaryButton({ text, onClick, type, icon, link }){
 
     // Default to rendering a regular anchor or button
     return link ? (
-        <a href={link} className="primary-btn">
+        <a href={link} className="primary-btn" target="_blank" rel="noopener noreferrer">
             {text}
             {svgCode && <Icon svgCode={svgCode} />}
         </a>

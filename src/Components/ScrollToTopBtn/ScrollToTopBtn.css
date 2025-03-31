@@ -13,10 +13,12 @@
 }
 @keyframes SlideIn{
     from{
-        bottom: 20px;
+        bottom: 0;
+        opacity: 0;
     }
     to{
         bottom: 50px;
+        opacity: 1;
     }
 }
 .scroll-to-top-arrow-icon svg{
@@ -51,10 +53,12 @@
     }
     @keyframes SlideIn{
         from{
-            bottom: 10px;
+            bottom: 0;
+            opacity: 0;
         }
         to{
             bottom: 30px;
+            opacity: 1;
         }
     }
 }
@@ -70,10 +74,12 @@
     }
     @keyframes SlideIn{
         from{
-            bottom: 5px;
+            bottom: 0;
+            opacity: 0;
         }
         to{
             bottom: 20px;
+            opacity: 1;
         }
     }
 }

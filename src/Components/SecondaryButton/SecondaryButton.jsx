@@ -14,7 +14,7 @@ function SecondaryButton({ text, onClick, type, link }){
     
     // Default to rendering a regular anchor or button
     return link ? (
-        <a href={link} className="secondary-btn">
+        <a href={link} className="secondary-btn" target="_blank" rel="noopener noreferrer">
             {text}
         </a>
     ) : (
