@@ -70,6 +70,7 @@
         position: absolute;
         bottom: calc(-1 * (var(--space-xl) - var(--space-xxs)));
         right: var(--space-xs);
+        box-shadow: var(--project-card-shadow);
     }
     .content-container .image-container img{
         width: 700px;

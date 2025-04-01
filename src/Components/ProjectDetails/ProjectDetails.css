@@ -30,8 +30,9 @@
 }
 
 .project-details-container .project-details .tag{
+    color: var(--white);
     background-image: none;
-    background-color: var(--white);
+    background-color: var(--secondary-color);
 }
 
 .project-details-container .project-details p{
