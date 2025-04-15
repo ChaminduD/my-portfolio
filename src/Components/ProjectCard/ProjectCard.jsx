@@ -24,7 +24,7 @@ function ProjectCard({
             </div>
             <div className="content-container" style={{ flexDirection: imageRight ? 'row-reverse' : 'row' }}>
                 <div className='image-container'>
-                    <img src={image} alt="Project" />
+                    <img src={image} alt={`${title} project image`} />
                 </div>
                 <div className="details-container">
                     <p>{description}</p>

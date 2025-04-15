@@ -10,7 +10,7 @@
 .hero-container img{
     width: clamp(200px, 30vw, 280px);
     height: clamp(200px, 30vw, 280px);
-    border-radius: 50%;
+    border-radius: 80px;
     border: 10px solid var(--grey);
     box-shadow: 0 4px 20px var(--secondary-color);
     margin-bottom: var(--space-md);

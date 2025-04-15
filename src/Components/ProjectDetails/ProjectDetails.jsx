@@ -24,7 +24,7 @@ function ProjectDetails({
                  style={{ flexDirection: imageRight ? 'row-reverse' : 'row' }}
         >
             <div className="project-image-container">
-                <img src={image} alt="Project Image" width={580} height={328}/>
+                <img src={image} alt={`${title} project image`} width={580} height={328}/>
             </div>
             <div className="project-details">
                 <h3>{title}</h3>
