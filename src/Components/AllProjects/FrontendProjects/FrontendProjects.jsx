@@ -1,7 +1,7 @@
 import './FrontendProjects.css';
-import ProjectDetails from '../../ProjectDetails/ProjectDetails';
+import ProjectDetails from '../../ProjectDetails/ProjectDetails.jsx';
 import { projects } from '../../../data/projectsData.js';
-import ScrollToTopBtn from '../../ScrollToTopBtn/ScrollToTopBtn';
+import ScrollToTopBtn from '../../ScrollToTopBtn/ScrollToTopBtn.jsx';
 
 function FrontendProjects(){
     const frontendProjects = projects.frontend;

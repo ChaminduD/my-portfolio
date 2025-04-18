@@ -224,7 +224,30 @@ export const projects = {
         },
     ],
     uiux: [
-
+        {
+            image: "/my-portfolio/images/uiux-design/Pixplore-Design.gif",
+            imageRight: false,
+            title: "Pixplore",
+            label: "Figma / Redesign",
+            problem: false,
+            solution: false,
+            description1: "Pixplore's redesign enhances both aesthetic and functional aspects of the original tool. Crafted in Figma, the updated design focuses on creating a sleek, user-friendly interface with improved navigation, interactivity, and responsiveness, ensuring clarity and modern appeal.",
+            twoButtons: false,
+            primaryBtnText: "View Live",
+            primaryBtnLink: "https://pixplore-engine.vercel.app/",
+        },
+        {
+            image: "/my-portfolio/images/uiux-design/Portfolio-Design.gif",
+            imageRight: true,
+            title: "Portfolio",
+            label: "Figma",
+            problem: false,
+            solution: false,
+            description1: "A dynamic portfolio showcasing expertise in crafting intuitive user experiences and engaging interfaces. Featuring responsive layouts, seamless navigation, and user-focused design, it highlights creativity and technical skill in delivering exceptional digital solutions.",
+            twoButtons: false,
+            primaryBtnText: "View Live",
+            primaryBtnLink: "https://chamindud.github.io/my-portfolio/",
+        },
     ],
 };
 
@@ -299,6 +322,25 @@ export const topProjects = {
         },
     ],
     uiux: [
-
+        {
+            title: "Pixplore",
+            label: "Figma / Redesign",
+            description: "Pixplore's redesign focuses on improving its usability and visual appeal. The updated design enhances navigation, interactivity, and responsiveness, creating a sleek, user-friendly interface with a modern touch.",
+            image: "/my-portfolio/images/uiux-design/Pixplore-Design.gif",
+            twoButtons: false,
+            primaryBtnText: "View Live",
+            primaryBtnLink: "https://pixplore-engine.vercel.app/",
+            imageRight: false,
+        },
+        {
+            title: "Portfolio",
+            label: "Figma",
+            description: "A dynamic portfolio showcasing intuitive user experiences and engaging interfaces. With responsive layouts and seamless navigation, it highlights creativity and technical skill in digital solutions.",
+            image: "/my-portfolio/images/uiux-design/Portfolio-Design.gif",
+            twoButtons: false,
+            primaryBtnText: "View Live",
+            primaryBtnLink: "https://chamindud.github.io/my-portfolio/",
+            imageRight: false,
+        },
     ],
 };

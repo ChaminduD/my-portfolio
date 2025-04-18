@@ -8,7 +8,11 @@ function Contact(){
             <p className="personal-email">chamindud.dahanayaka@gmail.com</p>
             <p className="contact-description">Feel free to reach out to me for any inquiries, collaborations, or project discussions.</p>
 
-            <form action="" className="contact-form">
+            <form
+                action="https://formspree.io/f/xpwpgyyw"
+                method="POST"
+                className="contact-form"
+            >
                 <input type="text" placeholder="Name" name="name" required/>
                 <input type="email" placeholder="Email" name="email" required/>
                 <textarea placeholder="Message" name="message" required></textarea>

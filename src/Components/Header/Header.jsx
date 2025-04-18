@@ -207,9 +207,13 @@ function Header(){
                         </ul>
                     </li>
                     <li>
-                        <a href="">
+                        <Link
+                            to="/resume"
+                            className={activeSection === "resume" ? "active" : ""}
+                            onClick={() => handleNavClick("resume")}
+                        >
                             Resume
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <HashLink

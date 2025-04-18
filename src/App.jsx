@@ -9,6 +9,7 @@ import UiUxProjects from './Components/AllProjects/UiUxProjects/UiUxProjects.jsx
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import NotFound from './Components/NotFound/NotFound.jsx';
 import ScrollToHash from './Components/ScrollToHash.jsx';
+import ResumePage from './Components/ResumePage/ResumePage.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/projects/frontend" element={<FrontendProjects/>} />
           <Route path="/projects/webdesign" element={<WebDesignProjects/>} />
           <Route path="/projects/uiux" element={<UiUxProjects/>} />
+          <Route path="/resume" element={<ResumePage />} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer/>
