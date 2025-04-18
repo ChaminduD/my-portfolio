@@ -16,9 +16,24 @@
 
 .contact-container .personal-email{
     font: var(--h3);
-    color: var(--black);
     text-shadow: 0 10px 20px var(--primary-color);
     margin: var(--space-lg2) 0 var(--space-md);
+}
+
+.contact-container .personal-email a{
+    text-decoration: none;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+@media (hover: hover){
+    .contact-container .personal-email a:hover{
+        color: var(--secondary-color);
+    }
+}
+
+.contact-container .personal-email a:active{
+    color: var(--primary-color);
 }
 
 .contact-container .contact-description{

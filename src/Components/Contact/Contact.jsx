@@ -18,7 +18,9 @@ function Contact(){
     return(
         <section id="contact" className="contact-container section">
             <h2 className="contact-title">Contact Me</h2>
-            <p className="personal-email">chamindud.dahanayaka@gmail.com</p>
+            <p className="personal-email">
+                <a href="mailto:chamindud.dahanayaka@gmail.com?subject=Portfolio Inquiry&body=Hi Chamindu,">chamindud.dahanayaka@gmail.com</a>
+            </p>
             <p className="contact-description">Feel free to reach out to me for any inquiries, collaborations, or project discussions.</p>
 
             <form

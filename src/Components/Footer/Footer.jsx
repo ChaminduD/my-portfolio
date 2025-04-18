@@ -8,16 +8,16 @@ function Footer(){
     return(
         <footer>
             <div className="email-link">
-                <a href="">
+                <a href="mailto:chamindud.dahanayaka@gmail.com?subject=Portfolio Inquiry&body=Hi Chamindu,">
                     <p>SEND ME AN EMAIL</p>
                     <Icon svgCode={sendIcon} width={32} height={32}/>
                 </a>
             </div>
             <div className="social-links">
-                <a href="">
+                <a href="https://www.linkedin.com/in/chamindudahanayaka/" target="_blank" rel="noopener noreferrer">
                     <Icon svgCode={linkedInIcon} width={48} height={48}/>
                 </a>
-                <a href="">
+                <a href="https://github.com/ChaminduD" target="_blank" rel="noopener noreferrer">
                     <Icon svgCode={gitHubIcon} width={48} height={48}/>
                 </a>
             </div>
