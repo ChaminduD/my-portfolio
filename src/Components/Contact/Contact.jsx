@@ -1,26 +1,19 @@
-import { useEffect } from 'react'; 
 import './Contact.css';
 import PrimaryButton from '../PrimaryButton/PrimaryButton.jsx';
 
 function Contact(){
-    useEffect(() => {
-        const form = document.querySelector('.contact-form');
+    const handleSubmit = (e) => {
+        // Prevent default to handle form data manually
+        e.preventDefault();
 
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault(); // Prevent navigation during testing
-                form.reset(); // Clears all inputs and textareas
-                window.location.href = 'https://formspree.io/thanks?language=en'; // Redirect to the thank-you page
-            });
-        }
+        const form = e.target; // Get the form element
 
-        // Cleanup the event listener when the component unmounts
-        return () => {
-            if (form) {
-                form.removeEventListener('submit', () => {});
-            }
-        };
-    }, []);
+        // Submit the form data to Formspree
+        form.submit(); // Let Formspree handle the submission
+        
+        // Reset the form fields after submission
+        form.reset(); 
+    };
 
     return(
         <section id="contact" className="contact-container section">
@@ -32,6 +25,7 @@ function Contact(){
                 action="https://formspree.io/f/xpwpgyyw"
                 method="POST"
                 className="contact-form"
+                onSubmit={handleSubmit}
             >
                 <input type="text" placeholder="Name" name="name" required/>
                 <input type="email" placeholder="Email" name="email" required/>
