@@ -24,6 +24,12 @@
     margin-top: var(--space-xxl2);
 }
 
+@media only screen and (max-width: 1189px){
+    .all-web-design-container .all-web-design-projects{
+        gap: var(--space-xxl2);
+    }
+}
+
 @media only screen and (max-width: 580px){
     .all-web-design-container{
         padding: var(--space-xxl2) 0;
