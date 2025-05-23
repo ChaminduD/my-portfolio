@@ -45,6 +45,6 @@
         padding: var(--space-xxl) 0 var(--space-lg2);
     }
     .all-frontend-container .all-frontend-projects{
-        gap: var(--space-lg2);
+        gap: var(--space-xl);
     }
 }

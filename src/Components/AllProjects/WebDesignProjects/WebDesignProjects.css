@@ -45,6 +45,6 @@
         padding: var(--space-xxl) 0 var(--space-lg2);
     }
     .all-web-design-container .all-web-design-projects{
-        gap: var(--space-lg2);
+        gap: var(--space-xl);
     }
 }
