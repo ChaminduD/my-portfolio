@@ -20,3 +20,15 @@
     margin: var(--space-lg2) var(--space-lg2) var(--space-xxl3);
     max-width: 1139px;
 }
+
+@media only screen and (max-width: 768px){
+    .services-container .services-card-container{
+        margin-bottom: var(--space-xxl2);
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .services-container .services-card-container{
+        margin: var(--space-lg2) var(--space-sm) var(--space-xxl2);
+    }
+}

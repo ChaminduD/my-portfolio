@@ -20,13 +20,8 @@
     position: relative;
 }
 
-/* Web Design Projects Section */
-.web-design-projects-container{
-    padding-top: var(--space-xxl2);
-}
-
-/* UI/UX Design Projects Section */
-.ui-ux-projects-container{
+/* Web Design, UI/UX Design Projects Sections */
+.web-design-projects-container, .ui-ux-projects-container{
     padding-top: var(--space-xxl2);
 }
 
@@ -73,6 +68,12 @@
     opacity: 0.3;
 }
 
+@media only screen and (max-width: 768px){
+    .web-design-projects-container, .ui-ux-projects-container{
+        padding-top: var(--space-lg2);
+    }
+}
+
 @media only screen and (max-width: 739px){
     .prev-btn, .next-btn{
         top: 40%;
@@ -97,7 +98,7 @@
 
 @media only screen and (max-width: 510px){
     .project-container{
-        margin: var(--space-lg2) var(--space-md);
+        margin: var(--space-lg2) var(--space-sm);
     }
 }
 

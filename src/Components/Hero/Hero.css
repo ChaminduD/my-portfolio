@@ -47,6 +47,12 @@
     gap: var(--space-sm);
 }
 
+@media only screen and (max-width: 768px){
+    .hero-container{
+        padding-bottom: 0;
+    }
+}
+
 @media only screen and (max-width: 610px){
     .hero-container .name{
         line-height: 2.6rem;
@@ -55,7 +61,7 @@
 
 @media only screen and (max-width: 580px){
     .hero-container{
-        padding: var(--space-xxl) var(--space-lg) var(--space-xxl2);
+        padding: var(--space-xxl) var(--space-lg) 0;
     }
 }
 

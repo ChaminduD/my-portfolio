@@ -91,6 +91,12 @@
     }
 }
 
+@media only screen and (max-width: 768px){
+    .contact-container{
+        padding: var(--space-lg2) 0;
+    }
+}
+
 @media only screen and (max-width: 680px){
     .contact-container .personal-email{
         font-size: 1.75rem;

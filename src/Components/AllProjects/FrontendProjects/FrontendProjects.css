@@ -12,7 +12,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    margin: 0 var(--space-xxl);
+    margin: 0 var(--space-md);
 }
 
 .all-frontend-container .all-frontend-projects{
@@ -30,8 +30,21 @@
     }
 }
 
+@media only screen and (max-width: 768px){
+    .all-frontend-container{
+        padding: clamp(110px, 10vw, 128px) var(--space-lg) var(--space-lg2);
+    }
+    .all-frontend-container .all-frontend-projects{
+        gap: var(--space-xxl);
+        margin-top: var(--space-xl);
+    }
+}
+
 @media only screen and (max-width: 580px){
     .all-frontend-container{
-        padding: var(--space-xxl2) 0;
+        padding: var(--space-xxl) 0 var(--space-lg2);
+    }
+    .all-frontend-container .all-frontend-projects{
+        gap: var(--space-lg2);
     }
 }

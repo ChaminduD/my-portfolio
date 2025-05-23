@@ -20,8 +20,23 @@
     margin: var(--space-lg2) 0 var(--space-xxl2);
 }
 
+@media only screen and (max-width: 768px){
+    .work-method-container .working-steps-container{
+        margin-bottom: var(--space-lg2);
+    }
+}
+
 @media only screen and (max-width: 640px){
     .work-method-container{
         width: 85%;
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .work-method-container{
+        width: auto;
+    }
+    .work-method-container .working-steps-container{
+        margin: var(--space-lg2) var(--space-sm) var(--space-lg2);
     }
 }

@@ -38,24 +38,21 @@
 
 @media only screen and (max-width: 930px){
     .tools-container .tools-type .tool-label-container{
-        max-width: 600px;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    .tools-container .tools-type .tool-label-container{
-        max-width: 440px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .tools-container .tools-type .tool-label-container{
+        max-width: 800px;
         gap: var(--space-sm);
+        margin: 0 var(--space-lg2);
     }
 }
 
-@media only screen and (max-width: 464px){
+@media only screen and (max-width: 768px){
+    .tools-container{
+        margin-bottom: var(--space-xxl2);
+    }
+}
+
+@media only screen and (max-width: 479px){
     .tools-container .tools-type .tool-label-container{
-        max-width: 300px;
+        margin: 0 var(--space-sm);
+        gap: var(--space-xs);
     }
 }

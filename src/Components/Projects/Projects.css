@@ -21,3 +21,9 @@
     gap: var(--space-lg2);
     margin-top: var(--space-lg2);
 }
+
+@media only screen and (max-width: 768px){
+    .all-projects-container{
+        padding: var(--space-lg2) 0;
+    }
+}

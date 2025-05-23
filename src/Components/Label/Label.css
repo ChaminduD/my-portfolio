@@ -10,11 +10,25 @@
 }
 
 @media only screen and (max-width: 930px){
+    .label-container{
+        padding: var(--space-sm) var(--space-md);
+        gap: var(--space-sm);
+    }
     .label-container .label-icon{
         display: contents;
     }
     .label-container .label-icon svg{
         width: 30px;
         height: 30px;
+    }
+}
+
+@media only screen and (max-width: 594px){
+    .label-container{
+        gap: calc(var(--space-xs) + var(--space-xxs));
+    }
+    .label-container .label-icon svg{
+        width: 24px;
+        height: 24px;
     }
 }

@@ -33,3 +33,10 @@
         margin-right: var(--space-xl);
     }
 }
+
+@media only screen and (max-width: 510px){
+    .about-container .about-description{
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
+    }
+}
