@@ -17,12 +17,12 @@
 /* Hover styles applied only if the device supports hover */
 @media (hover: hover){
     .secondary-btn:hover{
-        color: var(--background-color);
-        background-color: var(--grey);
+        color: var(--secondary-color);
+        background-color: var(--primary-light);
+        border-color: var(--secondary-color);
     }
 }
 
 .secondary-btn:active{
-    color: var(--background-color);
-    background-color: hsl(0, 0%, 40%);
+    background-color: var(--white);
 }

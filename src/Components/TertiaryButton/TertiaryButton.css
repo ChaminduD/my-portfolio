@@ -1,0 +1,53 @@
+.tertiary-btn{
+    color: var(--grey);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 1px;
+    border-bottom: 3px solid var(--grey);
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center; /* Vertically center the icon and text */
+    justify-content: center;
+    text-decoration: none;
+}
+
+.tertiary-btn .icon svg path{
+    fill: var(--grey);
+    transition: var(--transition);
+}
+
+.tertiary-btn .icon{
+    margin-left: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+/* Hover styles applied only if the device supports hover */
+@media (hover: hover){
+    .tertiary-btn:hover{
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+    .tertiary-btn:hover .icon svg path{
+        fill: var(--secondary-color);
+    }
+    .tertiary-btn .icon svg path:hover{
+        fill: var(--secondary-color);
+    }
+}
+
+.tertiary-btn:active{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.tertiary-btn:active .icon svg path{
+    fill: var(--primary-color);
+}
+.tertiary-btn .icon svg path:active{
+    fill: var(--primary-color);
+}

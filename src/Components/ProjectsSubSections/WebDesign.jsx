@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import { topProjects } from '../../data/projectsData.js';
 import { navArrowIcon } from '../Icon/Icons.jsx';
 import Icon from '../Icon/Icon.jsx';
-import PrimaryButton from '../PrimaryButton/PrimaryButton.jsx';
+import TertiaryButton from '../TertiaryButton/TertiaryButton.jsx';
 
 function WebDesign(){
     const [count, setCount] = useState(0);
@@ -37,7 +37,7 @@ function WebDesign(){
             </div>
 
             <Link to="/projects/webdesign">
-                <PrimaryButton text="View All Projects" icon="all"/>
+                <TertiaryButton text="View All Projects" icon="all"/>
             </Link>
         </section>
     );
