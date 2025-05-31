@@ -24,8 +24,8 @@
 .scroll-to-top-arrow-icon svg{
     transform: rotate(90deg);
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 .scroll-to-top-arrow-icon svg path{
     fill: var(--white);
@@ -48,8 +48,8 @@
         right: 30px;
     }
     .scroll-to-top-arrow-icon svg {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
     }
     @keyframes SlideIn{
         from{
@@ -67,10 +67,6 @@
     .scroll-to-top-arrow {
         bottom: 20px;
         right: 20px;
-    }
-    .scroll-to-top-arrow-icon svg{
-        width: 32px;
-        height: 32px;
     }
     @keyframes SlideIn{
         from{
